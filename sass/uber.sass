@@ -1,3 +1,10 @@
+@import "media"
+
+*	
+	font-family: sans-serif
+
+
+
 =btn_hover
 	&:hover
 	background-image: none
@@ -14,10 +21,11 @@ header
 nav
 	height: 50px
 	background-color: black
-
+	
 .menu
 	display: flex
 	
+
 	justify-content: space-between
 	padding: 13px, 70px
 	margin: 0
@@ -29,12 +37,16 @@ nav
 		align-items: center
 		
 		color: #FFFFFF
+		
 
 	.menu_item
 		border-right: 2px dotted black
 		padding-right: 25px
+		&:last-child
+			border-right: none	
 
 .subheader
+
 	position: absolute
 	width: 100%
 	height: 84px
@@ -53,7 +65,7 @@ nav
 		align-items: center
 		color: #FFFFFF
 
-	.call
+	&_call
 		font-size: 14px
 		text-align: right
 		font-weight: 300px
@@ -61,7 +73,7 @@ nav
 		color: #FFFFFF
 		text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
 
-	&_number
+	&_phone
 		font-weight: 400px
 		font-size: 22px
 		line-height: 68px
@@ -100,7 +112,8 @@ nav
 		color: #FFFFFF
 		text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
 		
-		
+.hamburger
+	display: none		
 
 .promo
 	height: 800px
@@ -171,33 +184,27 @@ nav
 		color: #FFFFFF
 
 .title
-		display: block
-		margin-top: 30px
-		font-weight: 700
-		font-size: 38px
-		line-height: 48px
-
-		/* identical to box height, or 126%
-		align-items: center
-		text-align: center
-		text-transform: uppercase
-		color: #222222
+	display: block
+	margin-top: 30px
+	font-weight: 700
+	font-size: 38px
+	line-height: 48px
+	align-items: center
+	text-align: center
+	text-transform: uppercase
+	color: #222222
 
 	 
 
-.reasons .reasons_block
-	display: flex
-	justify-content: center
-	align-items: center
-	margin-top: 35px
+.reasons 
+	padding: 71px 0 65px 0
+	&_block
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-top: 35px
 
-.icons .reasons_block
-	display: flex
-	justify-content: center
-	align-items: center
-	margin-top: 35px
-
-	.reasons_round
+	&_round
 		display: flex
 		justify-content: center
 		align-items: center
@@ -207,14 +214,14 @@ nav
 		background-color: #1eacc7
 		border-radius: 100%
 
-	.reasons_descr
+	&_descr
 		width: 343px
-		line-height: 21px
-		color: #1eacc7
-		font-size: 17px
-		font-weight: 400
-
-		.reasons_text
+		&_subtitle
+			line-height: 21px
+			color: #1eacc7
+			font-size: 17px
+			font-weight: 400
+		&_text
 			color: #202020
 			font-size: 15px
 			font-weight: 300
